@@ -77,7 +77,7 @@ def test_k_to_c_cases(k, expected_c):
         (32, "F", "C", 0.0),
         (0, "C", "K", 273.15),
         (0, "K", "K", 0),
-        (0, "K", "", -273.15),
+        (0, "K", "C", -273.15),
     ],
 )
 def test_conversion_cases(value, from_u, to_u, expected_v):
