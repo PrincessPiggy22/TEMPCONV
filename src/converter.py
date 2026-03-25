@@ -1,6 +1,7 @@
 # Absolute zero in Celsius
 ABSOLUTE_ZERO_C = -273.15
 
+
 def celsius_to_fahrenheit(c: float) -> float:
     """Convert Celsius to Fahrenheit.
     Formula: (c * 9/5) + 32
@@ -9,6 +10,7 @@ def celsius_to_fahrenheit(c: float) -> float:
     return (c * 9/5) + 32
     ...
 
+
 def fahrenheit_to_celsius(f: float) -> float:
     """Convert Fahrenheit to Celsius.
     Formula: (f - 32) * 5/9
@@ -16,6 +18,7 @@ def fahrenheit_to_celsius(f: float) -> float:
     """
     return (f - 32) * 5/9
     ...
+
 
 def celsius_to_kelvin(c: float) -> float:
     """Convert Celsius to Kelvin.
@@ -28,6 +31,7 @@ def celsius_to_kelvin(c: float) -> float:
     return c + 273.15
     ...
 
+
 def kelvin_to_celsius(k: float) -> float:
     """Convert Kelvin to Celsius.
     Formula: k - 273.15
@@ -38,6 +42,7 @@ def kelvin_to_celsius(k: float) -> float:
         raise ValueError("Kelvin cannot be negative")
     return k - 273.15
     ...
+
 
 def convert(value: float, from_unit: str, to_unit: str) -> float:
     """Convert a temperature between any supported units.
@@ -76,3 +81,4 @@ def convert(value: float, from_unit: str, to_unit: str) -> float:
     else:
         raise ValueError(f"Unknown unit: {to_unit}")
     ...
+    
