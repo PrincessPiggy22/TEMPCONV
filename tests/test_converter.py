@@ -1,8 +1,9 @@
 import pytest
-from src.converter import *
+from src.converter import celsius_to_fahrenheit, fahrenheit_to_celsius
+from src.converter import celsius_to_kelvin, kelvin_to_celsius
+from src.converter import convert
 
 # ── Basic tests using fixtures ──────────────────────────────────
-
 
 
 def test_freezing_c_to_f(freezing_point):
