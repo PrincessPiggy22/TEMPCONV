@@ -95,10 +95,11 @@ def test_unknown_from_unit():
     with pytest.raises(ValueError):
         convert(0, "X", "C")
 
+
 def test_negative_kelvin():
     # The match argument takes a regular expression
     with pytest.raises(ValueError):
-       kelvin_to_celsius(-67)
+        kelvin_to_celsius(-67)
 
 
 # ── Edge cases ──────────────────────────────────────────────────
