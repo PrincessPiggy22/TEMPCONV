@@ -7,7 +7,7 @@ def celsius_to_fahrenheit(c: float) -> float:
     Formula: (c * 9/5) + 32
     Example: 0°C → 32.0°F,  100°C → 212.0°F
     """
-    return (c * 9/5) + 32
+    return (c * 9 / 5) + 32
     ...
 
 
@@ -16,7 +16,7 @@ def fahrenheit_to_celsius(f: float) -> float:
     Formula: (f - 32) * 5/9
     Example: 32°F → 0.0°C,  212°F → 100.0°C
     """
-    return (f - 32) * 5/9
+    return (f - 32) * 5 / 9
     ...
 
 
@@ -57,7 +57,7 @@ def convert(value: float, from_unit: str, to_unit: str) -> float:
     """
     # Normalize to uppercase so 'c' and 'C' both work
     from_unit = from_unit.upper()
-    to_unit   = to_unit.upper()
+    to_unit = to_unit.upper()
 
     # If same unit, return as-is
     if from_unit == to_unit:
@@ -81,4 +81,3 @@ def convert(value: float, from_unit: str, to_unit: str) -> float:
     else:
         raise ValueError(f"Unknown unit: {to_unit}")
     ...
-    

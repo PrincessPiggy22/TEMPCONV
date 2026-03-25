@@ -11,4 +11,3 @@ def freezing_point():
 def boiling_point():
     """Returns the boiling point in all three units."""
     return {"C": 100.0, "F": 212.0, "K": 373.15}
-    
